@@ -1,0 +1,85 @@
+@CHARSET "ISO-8859-1";
+
+
+#frmfilter, #frmcreateTimeReport
+{
+	width: 25%;
+	
+}
+
+#tabs {width: 50%;}
+
+input[type=text], select,textarea
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+div > #frmfilter {
+    border-radius: 5px;
+   /* background-color: #f2f2f2;*/
+    padding: 20px;
+}
+
+div > #frmcreateTimeReport {
+    border-radius: 5px;
+   /* background-color: #f2f2f2;*/
+    padding: 20px;
+}
+
+
+.ui-tabs .ui-tabs-nav
+{
+background: #0040FF;
+}
+
+.ui-tabs .ui-tabs-panel
+{
+	/*background: blue;*/
+}
+
+#timeReportTbl 
+{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#timeReportTbl td, #timeReportTbl th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#timeReportTbl tr:nth-child(even){background-color: #f2f2f2;}
+
+#timeReportTbl tr:hover {background-color: #ddd;}
+
+#timeReportTbl th 
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#btnSendTR
+{
+	margin-top: 20px;
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   
+    cursor: pointer;
+	
+}

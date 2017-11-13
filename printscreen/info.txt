@@ -1,0 +1,3 @@
+Det blev några extra tidsraporter skapade med api. 
+När jag gjorde några tester. Missade att anropa
+functionen som sparar i databasen.  
