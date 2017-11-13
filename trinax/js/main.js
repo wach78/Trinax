@@ -139,11 +139,9 @@ $(document).ready(function() {
 	$( "#selectworkplace" ).selectmenu({
 
 		  change: function( event, ui ) { 
-			    var optionSelected = $("option:selected", this);
-			    var valueSelected = this.value;
 			 
 			    gselectval = ui.item.value;
-	
+			  
 			    var fromdate = $('#fromdate').val();
 				var todate =  $('#todate').val();
 				
@@ -162,7 +160,7 @@ $(document).ready(function() {
 				}
 				else
 				{
-					ajaxCallListTR(valueSelected,fromdate,todate);
+					ajaxCallListTR(gselectval,fromdate,todate);
 				}
 				
 			
