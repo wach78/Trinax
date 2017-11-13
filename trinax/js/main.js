@@ -141,15 +141,13 @@ $(document).ready(function() {
 		  change: function( event, ui ) { 
 			    var optionSelected = $("option:selected", this);
 			    var valueSelected = this.value;
-			    
-			    $('#selectworkplace option').removeAttr('selected');
-			    $('#selectworkplace').find('option[value="'+valueSelected +'"]').attr('selected', true);
-			
-			    gselectval = valueSelected ;
+			 
+			    gselectval = ui.item.value;
+	
 			    var fromdate = $('#fromdate').val();
 				var todate =  $('#todate').val();
 				
-	
+				
 				if (fromdate == '' && todate != '')
 				{
 					$.alert('Från datum kan inte var tom när till datum är vald',' Datum');
@@ -166,6 +164,8 @@ $(document).ready(function() {
 				{
 					ajaxCallListTR(valueSelected,fromdate,todate);
 				}
+				
+			
 		  }
 	});
 	
@@ -179,8 +179,7 @@ $(document).ready(function() {
 		var valueSelected = $("#trselectworkplace option:selected").val();
 	    var comment = $('#comment').val();
 		var file = $('#fileToUpload')[0].files[0]
-	//	var filename = file['name'];
-		
+
 		if (date == '')
 		{
 			$.alert('Kan inte vara tom', 'Datum')
@@ -192,7 +191,7 @@ $(document).ready(function() {
 			$.alert('Kan inte vara tom', 'Timmar')
 			return false;
 		}
-		
+	
 		if (valueSelected == -1)
 		{
 			$.alert('Kan inte vara tom', 'Arbetsplats')
